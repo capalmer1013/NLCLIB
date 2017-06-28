@@ -1,7 +1,6 @@
 """ Model Module
 """
 from bs4 import BeautifulSoup
-import html5lib
 
 defaultParser = BeautifulSoup
 class Model(object):
@@ -21,3 +20,6 @@ class Model(object):
         """
         self.html = inHtml
         self.tree = self.parser(inHtml, "html5lib")
+        # remove the script and style tags
+        _ = [x.extract() for x in self.tree('style')]
+        _ = [x.extract() for x in self.tree('script')]
