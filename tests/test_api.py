@@ -23,6 +23,8 @@ class TestTopLevelFunctions(unittest.TestCase):
         controller = nlclib.Controller()
 
         model.setHtml(controller.getHtml("http://google.com"))
+        # there should be a lighter weight way to do this
+        # maybe just pass the model into the view constructor
         view.update(model)
 
     def test_UrlWithoutHttp(self):
