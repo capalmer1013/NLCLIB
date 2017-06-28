@@ -1,4 +1,4 @@
-![coverage](https://github.com/capalmer1013/NLCLIB/blob/master/coverage.svg)
+![coverage](coverage.png)
 # NLCLIB
 Not Lynx Command Line Interface Browser
 ```
