@@ -9,10 +9,10 @@ splash = r"""
 /_/|_//____/\___//____//___//____/ 
 """
 
-def writeToScreen(input):
+def writeToScreen(value):
     """ A wrapper for writing to the screen
     """
-    print input
+    print value
 
 def splashScreen():
     """ display the opening splashscreen
