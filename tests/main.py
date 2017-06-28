@@ -1,7 +1,11 @@
 """ main test runner
+    whenever new testcase files are added,
+    they need to be imported here.
+    Also, I can't figure out a better way to
+    do this than with a wildcard import
 """
-import glob
-import subprocess
+import unittest
+from test_api import *
 
-for i in glob.glob("tests/test_*.py"):
-    subprocess.call(['python', i])
+if __name__ == "__main__":
+    unittest.main()

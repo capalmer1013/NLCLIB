@@ -1,6 +1,9 @@
 """ This is for testing the API that needs designed first
 """
+import sys
 import unittest
+sys.path.append("./")
+import nlclib
 
 class TestTheTest(unittest.TestCase):
     """ This is to test that the tests are set up right
@@ -10,5 +13,3 @@ class TestTheTest(unittest.TestCase):
         """
         print "testing"
 
-if __name__ == "__main__":
-    unittest.main()
