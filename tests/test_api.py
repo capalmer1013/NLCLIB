@@ -5,11 +5,11 @@ import unittest
 sys.path.append("./")
 import nlclib
 
-class TestTheTest(unittest.TestCase):
-    """ This is to test that the tests are set up right
+class TestTopLevelFunctions(unittest.TestCase):
+    """ Test all of the functions available at the top level of the api
     """
-    def test_thatThisIsReached(self):
-        """ print if nothings broken
-        """
-        print "testing"
 
+    def test_launchMain(self):
+        """ Basic call to the main entry point to the program
+        """
+        nlclib.main.main()
