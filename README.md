@@ -1,3 +1,4 @@
+![coverage](coverage.svg)
 # NLCLIB
 Not Lynx Command Line Interface Browser
 ```
