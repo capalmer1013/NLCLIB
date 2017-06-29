@@ -32,3 +32,16 @@ class TestTopLevelFunctions(unittest.TestCase):
         """
         controller = nlclib.Controller()
         controller.getHtml("google.com")
+
+    def test_ModelRemoveStyle(self):
+        """ make a page to call on test server
+            that has style tags
+        """
+        pass
+
+    def test_ModelRemovesScript(self):
+        """ make a page to call on testServer
+            that has script tag
+        """
+        pass
+
